@@ -1,0 +1,41 @@
+body{
+    background-image: url('../assets/sandpaper.png');
+    padding: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.container-table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 50px;
+   
+}
+
+
+.item-th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.item-td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container-tr{
+    background: #f0c381;
+}
+
+.container-tr-color{
+    background: #F5F5F5;
+}
+

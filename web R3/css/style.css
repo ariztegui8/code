@@ -1,0 +1,165 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/gravel.png');
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-modal{
+    background-image: url(../assets/cvFullStack.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    border-radius: 3%;
+}
+
+.modal-video{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-video i{
+    color: white;
+    font-size: 40px;
+    transition: all 0,2 ease;
+    cursor: pointer;
+}
+
+.modal-video i:hover{
+    transform: scale(1.2);
+}
+
+.container-text{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.container-text h1{
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.video-mp4{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+}
+
+.video-mp4 video{
+    position: relative;
+    width: auto;
+    height: 550px
+}
+
+.video-mp4 .close{
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    right: 55px;
+    top: 8px;
+    transition: all 0,2 ease;
+    cursor: pointer;
+}
+
+.video-mp4 .close:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 413.98px) { 
+    .container {
+        flex-direction: column;
+    }
+
+    .container-text h1 {
+        font-size: 32px;
+    }
+
+    .container-text {
+        padding: 10px;
+    }
+
+    .container-modal {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) { 
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container-text h1 {
+        font-size: 32px;
+    }
+
+    .container-text {
+        padding: 10px;
+    }
+
+    .container-modal {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container-text h1 {
+        font-size: 32px;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+       .container-modal {
+        width: 70%;
+        height: 400px;
+       }
+
+       .container-text h1 {
+           font-size: 30px;
+       }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+}
+
+@media (min-width: 1200px) { 
+}
